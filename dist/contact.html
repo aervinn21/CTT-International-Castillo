@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="./output.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+</head>
+<body class="font-poppins">
+    <header class="header py-4">
+        <div class="container">
+            <div class="headerWrapper flex justify-between items-center">
+                <div class="relative">
+                    <p class="font-bold md:text-sm text-[10px]">Craniocervical-Craniosacral-TMJ</p>
+                    <h2 class="text-huge font-bold md:leading-[2.5rem] leading-[2rem]">CCCS -TMJ</h2>
+                    <p class="font-semibold right-0 absolute md:text-sm text-[10px]">I N T E R N A T I O N A L</p>
+                </div>
+                <nav class="hidden md:block">
+                    <ul class="flex gap-5">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a class="py-4" href="about.html">About</a></li>
+                        <li><a class="py-4" href="courses.html">Courses</a></li>
+                        <li><a class="border-b-4 border-secondary py-4" href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="toggleMenu md:hidden cursor-pointer mt-4 ">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <nav class="headerMobileNav border-2 rounded-md block transition-all duration-500 md:hidden bg-primary mt-7">
+                <ul class="text-center font-semibold text-2xl ">
+                    <li class="py-3"><a  href="index.html">Home</a></li>
+                    <li class="py-3"><a  href="about.hmtl">About</a></li>
+                    <li class="py-3"><a  href="courses.html">Courses</a></li>
+                    <li class="bg-white py-3"><a class="border-b-4 md:border-secondary border-none" href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="contact py-16">
+        <div class="container">
+            <h1 class="text-vhuge font-bold text-left py-5">Contact</h1>
+           
+            <div class="contactWrapper md:flex gap-8 md:w-[80%] mx-auto">
+                <div>
+                    <form action="">
+                        <p class="mb-6">For more information on our craniosacral seminar and <br> to register for the course, contact us today!</p>
+                        <input type="text" name="" id="" placeholder="Name" class="rounded-lg w-full text-[#00000048] p-4 border-2 border-[#00000048] mb-4">
+                        <input type="email" name="" id="" placeholder="Email" class="rounded-lg w-full text-[#00000048] p-4 border-2 border-[#00000048] mb-4">
+                        <input type="tel" name="" id="" placeholder="Phone Number" class="rounded-lg w-full text-[#00000048] p-4 border-2 border-[#00000048] mb-4">
+                        <textarea name="" id="" cols="30" rows="5" placeholder="Message" class="rounded-lg w-full text-[#00000048] p-4 border-2 border-[#00000048] mb-4"></textarea>
+                        <input type="submit" value="Submit" class="bg-secondary text-black font-semibold py-3 px-10 rounded-full">
+                    </form>
+                </div>
+                <div class="mt-16">
+                    <h5 class="font-bold text-2xl mb-4">Address</h5>
+                    <p class="mb-8">Lorem ipsum dolor sit amet consectetur. Amet adipiscing sit dolor sagittis nulla faucibus.</p>
+                    <h5 class="font-bold text-2xl mb-4">Support</h5>
+                    <p class="mb-4">cccstmjinternational@gmail.com</p>
+                    <p>0967 476 6598</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer py-10 bg-lightgray">
+        <div class="container">
+            <div class="footerWrapper">
+                <div class="relative mb-14">
+                    <p class="font-bold md:text-sm text-[10px]">Craniocervical-Craniosacral-TMJ</p>
+                    <h2 class="text-huge font-bold md:leading-[2.5rem] leading-[2rem]">CCCS -TMJ</h2>
+                    <p class="font-semibold left-32 absolute md:text-sm text-[10px]">I N T E R N A T I O N A L</p>
+                </div>
+                <div class="md:flex justify-between">
+                    <div class="md:w-[50%]">
+                        <p >where our passion for craniocervical and craniosacral therapy drives our commitment to providing high-quality education and training. With years of experience and expertise in the field, our team of instructors is dedicated to helping healthcare professionals improve their skills and expand their knowledge.</p>
+                    </div>
+                    <div>
+                         <p class="mb-4 pt-4">Follow us:</p>
+                         <ul class="flex gap-5 ">
+                            <li><i class="fa-brands fa-facebook text-3xl"></i></li>
+                            <li><i class="fa-brands fa-youtube text-3xl"></i></li>
+                            <li><i class="fa-brands fa-instagram text-3xl"></i></li>
+                         </ul> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const toggleMenu = document.querySelector('.toggleMenu');
+        const headerMobileNav = document.querySelector('.headerMobileNav');
+
+        toggleMenu.addEventListener('click', ()=>{
+            toggleMenu.classList.toggle('open');
+            headerMobileNav.classList.toggle('open');
+
+        })
+    </script>
+</body>
